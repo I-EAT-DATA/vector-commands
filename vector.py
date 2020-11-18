@@ -85,7 +85,8 @@ def explore():
 def get_age():
     global robot
 
-    registered = date(2019, 7, 31)
+    # date here
+    registered = date(2018, 1, 10)
     age = (date.today() - registered).days
 
     print(age)
@@ -97,7 +98,7 @@ def get_age():
 def get_weather():
     global robot
 
-    city = "North Oaks"
+    city = "CITYHERE"
 
     response = requests.get("http://api.openweathermap.org/data/2.5/weather?appid=WEATHERKEYHERE&q=" + city).json()
 
